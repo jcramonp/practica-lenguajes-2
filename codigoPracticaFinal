@@ -117,10 +117,9 @@ cicloPrincipal parqueadero = do
 
         "4" -> do
             putStrLn "Mostrando Lista de carros dentro del parqueadero"
-            -- Leer el parqueadero actualizado
             parqueaderoActualizado <- cargarParqueadero
             mapM_ (\v -> putStrLn $ mostrarVehiculo v) parqueaderoActualizado
-            cicloPrincipal parqueaderoActualizado  -- Mantenemos el parqueadero actualizado
+            cicloPrincipal parqueaderoActualizado  
 
         "5" -> putStrLn "¡Hasta luego!"
 
